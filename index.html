@@ -56,6 +56,14 @@
   a.row:hover .sub,a.row:hover .kind{color:rgba(255,255,255,.85)}
   .arrow{flex:none; font-size:19px; transition:transform .28s}
   a.row:hover .arrow{transform:translateX(4px)}
+  .tip{display:flex; align-items:center; gap:14px; margin-top:22px;
+       padding:17px 18px; background:#f7f6f3; color:#111110;
+       text-decoration:none; transition:transform .18s ease}
+  .tip:hover{transform:translateY(-2px)}
+  .tip:focus-visible{outline:2px solid #f7f6f3; outline-offset:3px}
+  .tip .name{color:#111110}
+  .tip .sub,.tip .kind{color:#6b6862}
+  .tip:hover .arrow{transform:translateX(4px)}
   footer{margin-top:auto; padding-top:26px; border-top:1px solid var(--hair);
          display:flex; justify-content:space-between; align-items:center; gap:12px;
          font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
@@ -94,6 +102,10 @@
       <span class="label"><span class="name">Facebook</span><span class="sub">facebook.com</span></span>
       <span class="kind">Follow</span><span class="arrow">&#8594;</span></a></li>
   </ul>
+
+  <a class="tip" href="https://venmo.com/u/eclecticcompanylive" target="_blank" rel="noopener">
+    <span class="label"><span class="name">Venmo</span><span class="sub">@eclecticcompanylive</span></span>
+    <span class="kind">Tip the band</span><span class="arrow">&#8594;</span></a>
 
   <footer>
     <span>Eclectic Company</span>
