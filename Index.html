@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eclectic Company — listen &amp; follow</title>
+<meta name="description" content="Eclectic Company on Spotify, Apple Music, YouTube Music, Amazon Music, Instagram and Facebook.">
+<meta property="og:type" content="music.musician">
+<meta property="og:title" content="Eclectic Company">
+<meta property="og:description" content="Listen and follow — every platform, one page.">
+<meta property="og:url" content="https://eclecticcompany.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111110">
+<style>
+  :root{
+    --ink:#111110; --paper:#f7f6f3; --muted:#8d8a83; --hair:#26251f;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#111110; color:#f7f6f3;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; min-height:100vh;
+    display:flex; flex-direction:column;
+  }
+  .wrap{width:100%; max-width:34rem; margin:0 auto; flex:1;
+        display:flex; flex-direction:column; padding:36px 20px 28px}
+  .eyebrow{margin:0 0 10px; font-size:10px; letter-spacing:.28em;
+           text-transform:uppercase; color:var(--muted)}
+  h1{margin:0; font-size:clamp(40px,12vw,64px); line-height:.9;
+     letter-spacing:-.01em; text-transform:uppercase; font-weight:800}
+  h1 span{display:block}
+  h1 .b{color:transparent; -webkit-text-stroke:1.5px #f7f6f3}
+  header{border-bottom:2px solid #f7f6f3; padding-bottom:14px}
+  .tagline{margin:12px 0 0; font-size:13px; line-height:1.5;
+           color:var(--muted); max-width:32ch}
+  ul{margin:22px 0 0; padding:0; list-style:none}
+  li{border-bottom:1px solid var(--hair)}
+  li:first-child{border-top:1px solid var(--hair)}
+  a.row{position:relative; display:flex; align-items:center; gap:14px;
+        padding:18px 14px 18px 18px; color:#f7f6f3; text-decoration:none;
+        overflow:hidden; isolation:isolate}
+  a.row::before{content:""; position:absolute; inset:0; background:var(--spot);
+                transform:scaleX(0); transform-origin:left center;
+                transition:transform .28s cubic-bezier(.2,.7,.3,1); z-index:-1}
+  a.row::after{content:""; position:absolute; left:0; top:0; bottom:0;
+               width:5px; background:var(--spot)}
+  a.row:hover::before,a.row:focus-visible::before{transform:scaleX(1)}
+  a.row:focus-visible{outline:2px solid #f7f6f3; outline-offset:-3px}
+  .label{flex:1; min-width:0}
+  .name{display:block; font-size:clamp(19px,5vw,24px); font-weight:800;
+        letter-spacing:.02em; text-transform:uppercase; line-height:1.05}
+  .sub{display:block; margin-top:3px; font-family:ui-monospace,Menlo,Consolas,monospace;
+       font-size:11px; color:var(--muted); white-space:nowrap;
+       overflow:hidden; text-overflow:ellipsis}
+  .kind{font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted)}
+  a.row:hover .sub,a.row:hover .kind{color:rgba(255,255,255,.85)}
+  .arrow{flex:none; font-size:19px; transition:transform .28s}
+  a.row:hover .arrow{transform:translateX(4px)}
+  footer{margin-top:auto; padding-top:26px; border-top:1px solid var(--hair);
+         display:flex; justify-content:space-between; align-items:center; gap:12px;
+         font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
+  button{appearance:none; background:none; border:1px solid var(--hair); color:#f7f6f3;
+         font:inherit; font-size:10px; letter-spacing:.18em; text-transform:uppercase;
+         padding:9px 14px; cursor:pointer}
+  button:hover{background:#f7f6f3; color:#111110}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Listen &amp; follow</p>
+    <h1><span>Eclectic</span><span class="b">Company</span></h1>
+    <p class="tagline">Every platform, one page. Pick wherever you already listen.</p>
+  </header>
+
+  <ul>
+    <li><a class="row" style="--spot:#0E8F6E" href="https://open.spotify.com/artist/5LPhDz4nGra6MrVLfzLm3Q" target="_blank" rel="noopener">
+      <span class="label"><span class="name">Spotify</span><span class="sub">open.spotify.com</span></span>
+      <span class="kind">Stream</span><span class="arrow">&#8594;</span></a></li>
+    <li><a class="row" style="--spot:#E0357B" href="https://music.apple.com/us/artist/eclectic-company/1836021516" target="_blank" rel="noopener">
+      <span class="label"><span class="name">Apple Music</span><span class="sub">music.apple.com</span></span>
+      <span class="kind">Stream</span><span class="arrow">&#8594;</span></a></li>
+    <li><a class="row" style="--spot:#F26430" href="https://music.youtube.com/channel/UC6uN5GhgUkmX3K-dwymTeDg" target="_blank" rel="noopener">
+      <span class="label"><span class="name">YouTube Music</span><span class="sub">music.youtube.com</span></span>
+      <span class="kind">Stream</span><span class="arrow">&#8594;</span></a></li>
+    <li><a class="row" style="--spot:#1F3BE0" href="https://music.amazon.com/artists/B0FPB1PK47" target="_blank" rel="noopener">
+      <span class="label"><span class="name">Amazon Music</span><span class="sub">music.amazon.com</span></span>
+      <span class="kind">Stream</span><span class="arrow">&#8594;</span></a></li>
+    <li><a class="row" style="--spot:#6B3FD4" href="https://www.instagram.com/eclecticcompanylive" target="_blank" rel="noopener">
+      <span class="label"><span class="name">Instagram</span><span class="sub">@eclecticcompanylive</span></span>
+      <span class="kind">Follow</span><span class="arrow">&#8594;</span></a></li>
+    <li><a class="row" style="--spot:#0B7FA8" href="https://www.facebook.com/share/1D5HneYxmY/" target="_blank" rel="noopener">
+      <span class="label"><span class="name">Facebook</span><span class="sub">facebook.com</span></span>
+      <span class="kind">Follow</span><span class="arrow">&#8594;</span></a></li>
+  </ul>
+
+  <footer>
+    <span>Eclectic Company</span>
+    <button id="b" type="button">Copy link</button>
+  </footer>
+</div>
+<script>
+document.getElementById('b').onclick=function(){
+  var u=location.href,t=this;
+  if(navigator.share){navigator.share({title:'Eclectic Company',url:u});return;}
+  navigator.clipboard.writeText(u).then(function(){t.textContent='Link copied';
+    setTimeout(function(){t.textContent='Copy link';},2000);});
+};
+</script>
+</body>
+</html>
